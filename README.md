@@ -1,5 +1,3 @@
-IvanSergeev59.github.io
-
-v 0.02
-
-JS,GIT,HTML
+# IvanSergeev59.github.io
+version 0.03
+GIT HTML JS

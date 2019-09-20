@@ -23,15 +23,15 @@
                         <input class="form__input" type="text" name="name" pattern="^([А-ЯЁ]{1}[а-я,ё]*$)|^([А-Я,Ё]{1}[а-я,ё]*-[А-ЯЁ]{1}[а-я,ё]*$)" minlength="2" maxlength="20" placeholder="Имя" required />
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="email" name="name" pattern="[\w-]+@[a-z]+\.[a-z]{1,}" placeholder="E-Mail" />
+                        <input class="form__input" type="email" name="name" pattern="[\w-]+@[a-z0-9-.]+\.[a-z]{1,}" placeholder="E-Mail" />
                         <span class="form__error">e-mail в формате: sega@yandex.ru</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="tel" name="name" placeholder="Телефон" pattern="^([+,7,8]{1})+([0-9-,(,)\s]*)"  minlength="11" maxlength="17"/>
+                        <input class="form__input" type="tel" name="name" placeholder="Телефон" pattern="^([+7]|[8])+([0-9-()\s]*)"  minlength="11" maxlength="17"/>
                         <span class="form__error">телефон в формате: +7 (123) 456-78-90</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="url" name="name" pattern="(^http\W{3}|^https\W{3})([a-z]{1,}[.]{1}[a-z]{1,}|\d{3}\W{1}\d{3}\W{1}\d{3}\W{1}\d{3})([:]{0,1}\d{2,5}$){0,6}" placeholder="Ваш сайт" />
+                        <input class="form__input" type="url" name="name" pattern="(^http\W{3}|^https\W{3})([a-z0-9-.]{1,}[.]{1}[a-z]{1,}|\d{3}\W{1}\d{3}\W{1}\d{3}\W{1}\d{3})([:]{0,1}\d{2,5}$){0,6}" placeholder="Ваш сайт" />
                         <span class="form__error">URL в формате: http://mysite.ru</span>
                     </div>
                     <button class="form__button" type="submit">Отправить</button>
@@ -42,5 +42,4 @@
 </body>
 </html>
 
-(\:\d{2,5}$)
 
